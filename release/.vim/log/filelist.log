@@ -1,0 +1,257 @@
+" --------------------------------------------------
+"    FileName: filelist.log
+"        Desc: 新加各种插件及文件说明
+"      Author: lcc
+"       Email: leftcold@gmail.com
+"     Version: 0.1
+"  LastChange: 09/12/2011 22:40
+"     History: 参见$VIMFILES/update.log \ez
+" --------------------------------------------------
+
+1、VIM中文文档
+	~/.vim/plugin/
+		vimcdoc.vim
+	~/.vim/syntax/
+		help_cn.vim
+	~/.vim/doc/
+		arabic.cnx
+		autocmd.cnx
+		change.cnx
+		cmdline.cnx
+		debug.cnx
+		debugger.cnx
+		develop.cnx
+		diff.cnx
+		digraph.cnx
+		editing.cnx
+		eval.cnx
+		farsi.cnx
+		filetype.cnx
+		fold.cnx
+		ft_ada.cnx
+		ft_sql.cnx
+		gui.cnx
+		gui_w16.cnx
+		gui_w32.cnx
+		gui_x11.cnx
+		hangulin.cnx
+		hebrew.cnx
+		help.cnx
+		helphelp.cnx
+		howto.cnx
+		if_cscop.cnx
+		if_lua.cnx
+		if_mzsch.cnx
+		if_ole.cnx
+		if_perl.cnx
+		if_pyth.cnx
+		if_ruby.cnx
+		if_sniff.cnx
+		if_tcl.cnx
+		indent.cnx
+		index.cnx
+		insert.cnx
+		intro.cnx
+		map.cnx
+		mbyte.cnx
+		message.cnx
+		mlang.cnx
+		motion.cnx
+		netbeans.cnx
+		options.cnx
+		os_390.cnx
+		os_amiga.cnx
+		os_beos.cnx
+		os_dos.cnx
+		os_mac.cnx
+		os_mint.cnx
+		os_msdos.cnx
+		os_os2.cnx
+		os_qnx.cnx
+		os_risc.cnx
+		os_unix.cnx
+		os_vms.cnx
+		os_win32.cnx
+		pattern.cnx
+		pi_getscript.cnx
+		pi_gzip.cnx
+		pi_netrw.cnx
+		pi_paren.cnx
+		pi_spec.cnx
+		pi_tar.cnx
+		pi_vimball.cnx
+		pi_zip.cnx
+		print.cnx
+		quickfix.cnx
+		quickref.cnx
+		quotes.cnx
+		recover.cnx
+		remote.cnx
+		repeat.cnx
+		rileft.cnx
+		russian.cnx
+		scroll.cnx
+		sign.cnx
+		spell.cnx
+		sponsor.cnx
+		starting.cnx
+		syntax.cnx
+		tabpage.cnx
+		tags-cn
+		tagsrch.cnx
+		term.cnx
+		tips.cnx
+		todo.cnx
+		uganda.cnx
+		undo.cnx
+		usr_01.cnx
+		usr_02.cnx
+		usr_03.cnx
+		usr_04.cnx
+		usr_05.cnx
+		usr_06.cnx
+		usr_07.cnx
+		usr_08.cnx
+		usr_09.cnx
+		usr_10.cnx
+		usr_11.cnx
+		usr_12.cnx
+		usr_20.cnx
+		usr_21.cnx
+		usr_22.cnx
+		usr_23.cnx
+		usr_24.cnx
+		usr_25.cnx
+		usr_26.cnx
+		usr_27.cnx
+		usr_28.cnx
+		usr_29.cnx
+		usr_30.cnx
+		usr_31.cnx
+		usr_32.cnx
+		usr_40.cnx
+		usr_41.cnx
+		usr_42.cnx
+		usr_43.cnx
+		usr_44.cnx
+		usr_45.cnx
+		usr_90.cnx
+		usr_toc.cnx
+		various.cnx
+		version4.cnx
+		version5.cnx
+		version6.cnx
+		version7.cnx
+		vi_diff.cnx
+		visual.cnx
+		windows.cnx
+		workshop.cnx
+
+2、配色高亮文件
+	~/.vim/colors/
+		blackdust.vim
+		calmbreeze.vim
+		freya.vim
+		lucius.vim
+		molokai.vim
+		rainbow_neon.vim
+
+3、ActionScript语法高亮
+	~/.vim/syntax/
+		actionscript.vim
+
+4、Css背景高亮
+	~/.vim/after/syntax/
+		css.vim
+
+5、VE文件浏览
+	~/.vim/plugin/
+		vimExplorer.vim
+	~/.vim/doc/
+		vimExplorer.txt
+
+6、NERDTree
+	~/.vim/plugin/
+		NERD_tree.vim
+	~/.vim/nerdtree_plugin/
+		exec_menuitem.vim
+		fs_menu.vim
+	~/.vim/doc/
+		NERD_tree.txt
+
+7、ZenCoding
+	~/.vim/plugin/
+		zencoding.vim
+	~/.vim/autoload/
+		zencoding.vim
+	~/.vim/doc/
+		zencoding.txt
+
+8、Gtrans翻译插件
+	~/.vim/plugin/
+		gtrans.vim
+
+9、NERDCommenter
+	~/.vim/plugin/
+		NERD_commenter.vim
+	~/.vim/doc/
+		NERD_commenter.txt
+
+10、Tabular
+	~/.vim/after/plugin/
+		TabularMaps.vim
+	~/.vim/autoload/
+		tabular.vim
+	~/.vim/plugin/
+		Tabular.vim
+	~/.vim/plugin/
+		Tabular.txt
+
+11、Taglist
+	~/.vim/plugin/
+		taglist.vim
+	~/.vim/doc/
+		taglist.txt
+
+12、ConqueTerm
+	~/.vim/autoload/
+		conque_term.vim
+	~/.vim/autoload/conque_term/
+		conque_globals.py
+		conque.py
+		conque_screen.py
+		conque_sole_communicator.py
+		conque_sole.py
+		conque_sole_shared_memory.py
+		conque_sole_subprocess.py
+		conque_sole_wrapper.py
+		conque_subprocess.py
+		conque_win32_util.py
+	~/.vim/doc/
+		conque_term.txt
+	~/.vim/plugin/
+		conque_term.vim
+	~/.vim/syntax/
+		conque_term.vim
+
+13、csExplorer
+	~/.vim/plugin/
+		csExplorer.vim
+	~/.vim/doc/
+		csExplorer.txt
+
+14、自定义配置文件
+	~/.vim/conf/
+		main.vim
+		set.vim
+		plugin.vim
+		function.vim
+		keyboard.vim
+		command.vim
+
+15、日志文件
+	~/.vim/log/
+		filelist.log
+		update.log
+
+" vim:ft=vim:norl:fdm=indent:fdc=1
