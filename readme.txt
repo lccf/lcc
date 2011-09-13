@@ -11,8 +11,8 @@ LCC
         linux发行版本一般自带
 
         windows版本可以从以下地址下载
-        32位：http://www.python.org/ftp/python/2.7.2/python-2.7.2.msi
-        64位：http://www.python.org/ftp/python/2.7.2/python-2.7.2.amd64.msi
+        32位： http://www.python.org/ftp/python/2.7.2/python-2.7.2.msi
+        64位： http://www.python.org/ftp/python/2.7.2/python-2.7.2.amd64.msi
 
     4、ctags
         linux版本通过包管理器安装 sudo apt-get install ctags
