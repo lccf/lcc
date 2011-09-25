@@ -17,3 +17,6 @@ fu! LoadLCC()
 	so $VIMFILES/conf/main.vim
 endf
 if !exists('g:lcc_loaded') | cal LoadLCC() | en
+
+" 修正默认目录为system32
+if(match(getcwd(),'system32$')>1) | cd ~/ | en
