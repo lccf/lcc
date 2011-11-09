@@ -29,6 +29,6 @@ LCC
         xp/2003 对应目录为 C:/Documents and Settings/Administrator
 
     2、脚本安装
-        后续会推出自动安装脚本，请观注
+        后续会推出自动安装脚本，请关注
 
 " vim:ts=4
