@@ -16,9 +16,8 @@ be mswin
 " let g:lcc_loaded = 1
 fu! LoadLCC()
 	let g:lcc_loaded=1
-	if !exists('$VIMFILES')
-		let $VIMFILES = has('win32') ? $HOME.'/vimfiles' : $HOME.'/.vim'
-	en
+	if !exists('$VIMFILES') | let $VIMFILES=$HOME.'/.vim' | en
+	if has('win32') | set rtp+=$VIMFILES | en
 	so $VIMFILES/conf/main.vim
 endf
 if !exists('g:lcc_loaded') | cal LoadLCC() | en
