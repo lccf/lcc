@@ -4,7 +4,7 @@
 "      Author: lcc
 "       Email: leftcold@gmail.com
 "     Version: 0.1
-"  LastChange: 09/12/2011 22:27
+"  LastChange: 11/10/2011 00:22
 "     History: 参见$VIMFILES/log/update.log \ez
 " --------------------------------------------------
 
@@ -95,4 +95,18 @@ endf
 ino <TAB> <C-R>=InsertTabWrapper()<CR>
 " 强制TAB键
 ino <S-TAB> <C-R>="\<TAB>"<CR>
+" 1}}}
+" --------------------------------------------------
+" [自动完成函数] {{{1
+" --------------------------------------------------
+fu! ToggleTab(t)
+	if a:t == 'tab'
+		setl et
+		ret
+	elsei a:t == 'space'
+		setl noet
+		ret!
+	en
+endf
+" 1}}}
 " vim:fdm=marker:fdc=1

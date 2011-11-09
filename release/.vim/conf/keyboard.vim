@@ -4,7 +4,7 @@
 "      Author: lcc
 "       Email: leftcold@gmail.com
 "     Version: 0.1
-"  LastChange: 09/12/2011 22:26
+"  LastChange: 11/10/2011 00:23
 "     History: 参见$VIMFILES/log/update.log \ez
 " --------------------------------------------------
 
@@ -43,8 +43,12 @@ ino <A-k> <ESC>O
 ino <A-j> <CR>
 ino <A-n> <Down>
 ino <A-m> <Up>
-ino <A-9> ()<ESC>i
-ino <A-[> {<ESC>o}<ESC>O
+ino <A-f> <C-o>$
+ino <A-b> <C-o>^
+ino <A-9> ()<Left>
+ino <A-0> (  )<Left><Left>
+ino <A-[> {}<Left>
+ino <A-]> {<ESC>o}<ESC>O
 ino <F5> <C-R>=strftime('%m/%d/%Y %H:%M')<CR>
 " 选中后删除
 vno <BS> d
