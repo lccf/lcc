@@ -24,7 +24,9 @@ LCC
 二、安装方式
     1、复制文件安装
         将 release/ 文件夹中的 .vimrc 文件和 .vim 文件夹复制到用户目录 ~/ 下
-        windows用户请将 .vim 文件夹重命名为 vimfiles
+        windows 系统用户目录为 %USERPROFILE% 环境变量所指目录
+        win7/2008 对应目录为 C:/User/Administrator
+        xp/2003 对应目录为 C:/Documents and Settings/Administrator
 
     2、脚本安装
         后续会推出自动安装脚本，请观注
