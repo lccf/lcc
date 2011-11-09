@@ -32,7 +32,8 @@ set hls
 " 行高亮
 set cursorline
 " 色彩高亮
-colorscheme molokai "colorscheme desert
+"colorscheme molokai 
+colorscheme desert
 "set bs=2 " 设置是否可使用删除键
 "set ic " 搜索不区分大小写
 "set cursorcolumn " 列高亮，与函数列表有冲突
@@ -79,10 +80,10 @@ set fileencoding=utf-8
 if has("gui_running")
 	" 加载菜单避免出现乱码
 	source $VIMRUNTIME/delmenu.vim
+	" 设置终端编码
+	set encoding=utf-8
+	let $LANG = 'zh_CN.UTF-8'
 endif
-" 设置终端编码
-set encoding=utf-8
-let $LANG = 'zh_CN.UTF-8'
 "set termencoding=utf-8
 "set langmenu=zh_CN
 "source $VIMRUNTIME/menu.vim
