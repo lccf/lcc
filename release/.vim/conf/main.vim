@@ -35,6 +35,8 @@ au BufNewFile,BufRead *.as set filetype=actionscript
 " [labs 试验区域存放试验配置] {{{1
 " --------------------------------------------------
 " au FileType php setlocal dict+=~/.vim/dict/php_funclist.txt
+if(has('win32') && match(getcwd(),'system32$')>1) | cd ~/ | en
+set dict+=$VIMFILES/dict/main.dict
 " 1}}}
 " --------------------------------------------------
 " [已加载插件说明] {{{1
