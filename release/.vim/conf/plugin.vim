@@ -33,11 +33,14 @@ let g:user_zen_settings = {
 \	},
 \	'php':{
 \		'snippets':{
+\			'php':"<?php\n|\n?>",
 \			'fn':'function |(){}',
 \			'cs':'class |{}',
 \			'pu':'public |',
 \			'pr':'private |',
 \			'pt':'protected |',
+\			'head:json':'header("Content-Type:application/json; charset=utf-8");',
+\			'head:utf8':'header("Content-Type:text/html; charset=utf-8");',
 \		}
 \	}
 \}
