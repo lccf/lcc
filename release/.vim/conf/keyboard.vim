@@ -47,9 +47,12 @@ ino <A-f> <C-o>$
 ino <A-b> <C-o>^
 ino <A-9> ()<Left>
 ino <A-0> (  )<Left><Left>
+ino <A-'> ""<Left>
 ino <A-[> {}<Left>
 ino <A-]> {<ESC>o}<ESC>O
+ino <A-=> ++<Left>
 ino <F5> <C-R>=strftime('%m/%d/%Y %H:%M')<CR>
+nn <A-r> :noh<CR>
 " 选中后删除
 vno <BS> d
 " 复制
@@ -71,6 +74,14 @@ exe 'vnoremap <script> <A-p>' paste#paste_cmd['v']
 "xnoremap <C-A> <C-C>ggVG
 " 1}}}
 " --------------------------------------------------
+" [宏执行热键] {{{1
+" --------------------------------------------------
+nn <F9> @1
+nn <F10> @2
+nn <F11> @3
+nn <F12> @4
+" 1}}}
+" --------------------------------------------------
 " [快捷文件操作] {{{1
 " --------------------------------------------------
 " 快捷退出
@@ -85,6 +96,7 @@ nn <leader>tc :tabc!<CR>
 nn <A-t>h :set ft=html<CR>
 nn <A-t>c :set ft=css<CR>
 nn <A-t>p :set ft=php<CR>
+nn <A-t>j :set ft=javascript<CR>
 " }}}
 " --------------------------------------------------
 " [快捷编辑配置文件] {{{1
