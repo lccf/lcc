@@ -22,4 +22,4 @@ fu! LoadLCC()
 endf
 if !exists('g:lcc_loaded') | cal LoadLCC() | en
 
-if(match(getcwd(),'system32$')>1) | cd ~/ | en
+" vim:fdm=marker:fdc=1
