@@ -97,16 +97,18 @@ ino <TAB> <C-R>=InsertTabWrapper()<CR>
 ino <S-TAB> <C-R>="\<TAB>"<CR>
 " 1}}}
 " --------------------------------------------------
-" [自动完成函数] {{{1
+" [空格与制表切换] {{{1
 " --------------------------------------------------
 fu! ToggleTab(t)
-	if a:t == 'tab'
-		setl et
-		ret
-	elsei a:t == 'space'
-		setl noet
-		ret!
-	en
+    if a:t == 'tab'
+        setl noet
+        ret!
+    elsei a:t == 'space'
+        setl et
+        ret
+    en
 endf
+com! -nargs=0 ToSpace call ToggleTab('space')
+com! -nargs=0 ToTab call ToggleTab('tab')
 " 1}}}
 " vim:fdm=marker:fdc=1
