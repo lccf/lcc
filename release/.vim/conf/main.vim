@@ -1,26 +1,26 @@
 " --------------------------------------------------
-"    FileName: main.vim
-"        Desc: 主配置文件
-"      Author: lcc
-"       Email: leftcold@gmail.com
-"     Version: 0.1
-"  LastChange: 09/12/2011 22:26
-"     History: 参见$VIMFILES/log/update.log \ez
+"   FileName: main.vim
+"       Desc: 主配置文件
+"     Author: lcc
+"      Email: leftcold@gmail.com
+"    Version: 1.0.0(beta)
+" LastChange: 05/27/2012 21:46
+"    History: 参见$VIMFILES/log/update.log \ez
 " --------------------------------------------------
 
 " --------------------------------------------------
 " [分配置文件加载] {{{1
 " --------------------------------------------------
 " 加载设置选项 访问命令 \es
-source $VIMFILES/conf/set.vim
+so <sfile>:p:h/set.vim
 " 加载插件配置,插件对应热键定义在内 访问命令 \ed
-source $VIMFILES/conf/plugin.vim
+so <sfile>:p:h/plugin.vim
 " 加载自定义函数 访问命令 \ef
-source $VIMFILES/conf/function.vim
+so <sfile>:p:h/function.vim
 " 加载按热键配置 访问命令 \eg
-source $VIMFILES/conf/keyboard.vim
+so <sfile>:p:h/keyboard.vim
 " 加载自定义命令 访问命令 \ec
-source $VIMFILES/conf/command.vim
+so <sfile>:p:h/command.vim
 " 1}}}
 " --------------------------------------------------
 " [autocmd自执行区域] {{{1
