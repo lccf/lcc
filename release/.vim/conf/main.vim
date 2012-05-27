@@ -34,9 +34,9 @@ au BufNewFile,BufRead *.as set filetype=actionscript
 " --------------------------------------------------
 " [labs 试验区域存放试验配置] {{{1
 " --------------------------------------------------
-" au FileType php setlocal dict+=~/.vim/dict/php_funclist.txt
-if(has('win32') && match(getcwd(),'system32$')>1) | cd ~/ | en
-set dict+=$VIMFILES/dict/main.dict
+" 修复从windows7任务栏启动时，当前目录为system32。因为system32目录文件过多，在
+" 此目录开启NERDTree时较卡
+if(has('win32') && match(getcwd(),'system32$')>1) | cd $HOME | en
 " 1}}}
 " --------------------------------------------------
 " [已加载插件说明] {{{1
