@@ -118,4 +118,4 @@ if has('gui_running')
 		"set guifont=Monospace\ 10 "set guifont=Monospace\ Italic \9
 	endif
 endif
-" vim:fdm=marker:fdc=1
+" vim:sw=4:ts=4:sts=4:noet:fdm=marker:fdc=1

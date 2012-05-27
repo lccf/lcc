@@ -108,4 +108,4 @@ nn <leader>ef :tabnew $VIMFILES/conf/function.vim<CR>
 nn <leader>eg :tabnew $VIMFILES/conf/keyboard.vim<CR>
 nn <leader>ec :tabnew $VIMFILES/conf/command.vim<CR>
 nn <leader>ez :tabnew $VIMFILES/log/update.log<CR>
-" vim:fdm=marker:fdc=1
+" vim:sw=4:ts=4:sts=4:noet:fdm=marker:fdc=1

@@ -1,6 +1,6 @@
-set nocp
 "source $VIMRUNTIME/vimrc_example.vim
 "source $VIMRUNTIME/mswin.vim
+set nocp
 be mswin
 
 " --------------------------------------------------
@@ -22,4 +22,4 @@ fu! LoadLCC()
 endf
 if !exists('g:lcc_loaded') | cal LoadLCC() | en
 
-" vim:fdm=marker:fdc=1
+" vim:sw=4:ts=4:sts=4:noet:fdm=marker:fdc=1

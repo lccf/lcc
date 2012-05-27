@@ -71,4 +71,4 @@ let g:Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 let g:Tlist_Use_Right_Window=1
 "let g:Tlist_Ctags_Cmd=$VIMFILES.'/bin/ctags.exe'
-" vim:fdm=marker:fdc=1
+" vim:sw=4:ts=4:sts=4:noet:fdm=marker:fdc=1

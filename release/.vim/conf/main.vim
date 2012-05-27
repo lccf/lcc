@@ -57,4 +57,4 @@ set dict+=$VIMFILES/dict/main.dict
 " [更多信息] {{{1
 " --------------------------------------------------
 " 更新vim帮助 :helptags $VIMFILES/doc
-" vim:fdm=marker:fdc=1
+" vim:sw=4:ts=4:sts=4:noet:fdm=marker:fdc=1

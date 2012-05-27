@@ -9,4 +9,4 @@
 " --------------------------------------------------
 "com! -nargs=0 Gt call GetTrans()
 "com! -nargs=? Ec call Econf(<args>)
-" vim:fdm=marker:fdc=1
+" vim:sw=4:ts=4:sts=4:noet:fdm=marker:fdc=1

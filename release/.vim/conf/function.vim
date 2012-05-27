@@ -111,4 +111,4 @@ endf
 com! -nargs=0 ToSpace call ToggleTab('space')
 com! -nargs=0 ToTab call ToggleTab('tab')
 " 1}}}
-" vim:fdm=marker:fdc=1
+" vim:sw=4:ts=4:sts=4:noet:fdm=marker:fdc=1
