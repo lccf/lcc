@@ -25,7 +25,7 @@ fu! LoadLCC()
 		"let $VIMFILES=split(&rtp, ',')[1]
 
 		" 加入更多判断的路径设置，如果上面两个在极个别情况下出现问题，那么请考
-		" 虑使用启用下面这个选项。
+		" 虑使用下面这个设置。
 		"let $VIMFILES=has('unix') ? $HOME.'/.vim' :
 					"\ has('win32') ? $HOME.'/vimfiles' :
 					"\ split(&rtp, ',')[0]
