@@ -3,13 +3,13 @@
 "        Desc: 函数配置文件
 "      Author: lcc
 "       Email: leftcold@gmail.com
-"     Version: 0.1
-"  LastChange: 11/10/2011 00:22
+"     Version: 1.0.0(beta)
+"  LastChange: 05/30/2012 00:46
 "     History: 参见$VIMFILES/log/update.log \ez
 " --------------------------------------------------
 
 " --------------------------------------------------
-" [格式化和转换函数] {{{1
+" [格式化和转换函数] {{{
 " --------------------------------------------------
 " css格式函数
 fu! CssFF(t)
@@ -82,9 +82,9 @@ fu! MyFF(t)
 		%s/\s*$//ge
 	en
 endf
-" 1}}}
+" }}}
 " --------------------------------------------------
-" [自动完成函数] {{{1
+" [自动完成函数] {{{
 " --------------------------------------------------
 " 自动完成
 fu! InsertTabWrapper()
@@ -95,9 +95,9 @@ endf
 ino <TAB> <C-R>=InsertTabWrapper()<CR>
 " 强制TAB键
 ino <S-TAB> <C-R>="\<TAB>"<CR>
-" 1}}}
+" }}}
 " --------------------------------------------------
-" [空格与制表切换] {{{1
+" [空格与制表切换] {{{
 " --------------------------------------------------
 fu! ToggleTab(t)
     if a:t == 'tab'
@@ -110,5 +110,22 @@ fu! ToggleTab(t)
 endf
 com! -nargs=0 ToSpace call ToggleTab('space')
 com! -nargs=0 ToTab call ToggleTab('tab')
-" 1}}}
+" }}}
+" --------------------------------------------------
+" [参考线切换] {{{
+" --------------------------------------------------
+fu! ReferenceLine(t)
+  let ccnum = &cc
+  if ccnum == '' | let ccnum = 0 | en
+  let csw = &sw
+  if a:t == 'add'
+    let ccnum = ccnum + csw
+    exec "setl cc=".ccnum
+  elsei a:t == 'subtract'
+    let ccnum = ccnum - csw
+    if ccnum >= 0 | exec "setl cc=".ccnum | en
+  en
+endf
+nn <silent> <A-u> :call ReferenceLine('subtract')<CR>
+nn <silent> <A-o> :call ReferenceLine('add')<CR>
 " vim:sw=4:ts=4:sts=4:noet:fdm=marker:fdc=1
