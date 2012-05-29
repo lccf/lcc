@@ -4,7 +4,7 @@
 "     Author: lcc
 "      Email: leftcold@gmail.com
 "    Version: 1.0.0(beta)
-" LastChange: 05/27/2012 23:49
+" LastChange: 05/30/2012 00:28
 "    History: 参见$VIMFILES/log/update.log \ez
 " --------------------------------------------------
 
@@ -33,7 +33,7 @@ set hls
 set cul
 " 色彩高亮 colorscheme
 colo desert
-"colorscheme molokai
+"colo molokai
 
 "set ic " 搜索不区分大小写
 "set cursorcolumn " 列高亮，与函数列表有冲突
@@ -57,7 +57,7 @@ highlight LeaderTab guifg=#666666
 " 匹配行首tab
 match LeaderTab /\t/
 " 允许删除退格
-set bs=3
+set bs=2
 " }}}
 " --------------------------------------------------
 " [自动完成] {{{
@@ -66,16 +66,15 @@ set cpt+=k "add dictionary complete
 " 加载默认词典文件
 set dict+=$VIMFILES/dict/main.dict
 " 当编辑PHP文件时，会加载PHP词典文件
-au FileType php setl dict+=~/.vim/dict/php_funclist.txt
+au FileType php setl dict+=$VIMFILES/dict/php_funclist.txt
 " }}}
 " --------------------------------------------------
 " [文件编码] {{{
 " --------------------------------------------------
 " 设置文件尝试编码
 set fencs=ucs-bom,utf-8,cp936,latin1
-" 设置默认文件编码
-" set fenc=utf-8
-if has("gui_running")
+" 设置非utf-8编码环境为utf-8
+if has("gui_running") && &enc != 'utf-8'
 	" 设置Vim内部使用编码
 	set enc=utf-8
 	" 重新设置菜单语言
@@ -83,8 +82,6 @@ if has("gui_running")
 	" 加载菜单避免出现乱码
 	so $VIMRUNTIME/menu.vim
 en
-"set termencoding=utf-8
-"set langmenu=zh_CN
 " }}}
 " --------------------------------------------------
 " [文件目录、历史记录] {{{
@@ -99,12 +96,14 @@ set dir=$VIMFILES/temp
 " --------------------------------------------------
 " [GUI配置] {{{
 " *如果设置中文名字体，需要此配置文件编码改为gbk
+" *如果需要使用微软黑显示中文，需要重新编译Vim
 " --------------------------------------------------
 if has('gui_running')
-	" 不显示菜单栏
-	"set go=r "set go-=m "set go-=T "set go+=b
+	" 不显示菜单栏 guioptions
 	set go=
-	" 设置windows下alt键与系统菜单的关系 winaltkeys
+	" 菜单栏其它选项
+	"set go=r "set go-=m "set go-=T "set go+=b
+	" 设置alt键与系统菜单的关系 winaltkeys
 	set wak=no
 	if has('win32')
 		" 最大化窗体
