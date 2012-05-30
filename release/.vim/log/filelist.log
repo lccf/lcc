@@ -213,27 +213,6 @@
 	~/.vim/doc/
 		taglist.txt
 
-12、ConqueTerm
-	~/.vim/autoload/
-		conque_term.vim
-	~/.vim/autoload/conque_term/
-		conque_globals.py
-		conque.py
-		conque_screen.py
-		conque_sole_communicator.py
-		conque_sole.py
-		conque_sole_shared_memory.py
-		conque_sole_subprocess.py
-		conque_sole_wrapper.py
-		conque_subprocess.py
-		conque_win32_util.py
-	~/.vim/doc/
-		conque_term.txt
-	~/.vim/plugin/
-		conque_term.vim
-	~/.vim/syntax/
-		conque_term.vim
-
 13、csExplorer
 	~/.vim/plugin/
 		csExplorer.vim
