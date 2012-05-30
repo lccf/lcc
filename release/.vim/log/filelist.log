@@ -164,7 +164,7 @@
 	~/.vim/after/syntax/
 		css.vim
 
-6、NERDTree
+5、NERDTree
 	~/.vim/plugin/
 		NERD_tree.vim
 	~/.vim/nerdtree_plugin/
@@ -173,7 +173,7 @@
 	~/.vim/doc/
 		NERD_tree.txt
 
-7、ZenCoding
+6、ZenCoding
 	~/.vim/plugin/
 		zencoding.vim
 	~/.vim/autoload/
@@ -181,17 +181,17 @@
 	~/.vim/doc/
 		zencoding.txt
 
-8、Gtrans翻译插件
+7、Gtrans翻译插件
 	~/.vim/plugin/
 		gtrans.vim
 
-9、NERDCommenter
+8、NERDCommenter
 	~/.vim/plugin/
 		NERD_commenter.vim
 	~/.vim/doc/
 		NERD_commenter.txt
 
-10、Tabular
+9、Tabular
 	~/.vim/after/plugin/
 		TabularMaps.vim
 	~/.vim/autoload/
@@ -201,19 +201,19 @@
 	~/.vim/plugin/
 		Tabular.txt
 
-11、Taglist
+10、Taglist
 	~/.vim/plugin/
 		taglist.vim
 	~/.vim/doc/
 		taglist.txt
 
-13、csExplorer
+11、csExplorer
 	~/.vim/plugin/
 		csExplorer.vim
 	~/.vim/doc/
 		csExplorer.txt
 
-14、自定义配置文件
+12、自定义配置文件
 	~/.vim/conf/
 		main.vim
 		set.vim
@@ -222,7 +222,7 @@
 		keyboard.vim
 		command.vim
 
-15、日志文件
+13、日志文件
 	~/.vim/log/
 		filelist.log
 		update.log
