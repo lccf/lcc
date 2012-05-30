@@ -33,7 +33,7 @@ function! <SID>ColorSchemeExplorer()
   let s:color_file_list = globpath(&runtimepath, 'colors/*.vim')
   let s:color_file_list = substitute(s:color_file_list, '\', '/', 'g')
 
-  exe "silent bot ".10."new "."Color Explorer"
+  exe "silent bot ".10."new "."Color_Explorer"
 
   setlocal bufhidden=delete
   setlocal buftype=nofile
