@@ -164,12 +164,6 @@
 	~/.vim/after/syntax/
 		css.vim
 
-5、VE文件浏览
-	~/.vim/plugin/
-		vimExplorer.vim
-	~/.vim/doc/
-		vimExplorer.txt
-
 6、NERDTree
 	~/.vim/plugin/
 		NERD_tree.vim
