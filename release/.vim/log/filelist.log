@@ -3,12 +3,12 @@
 "        Desc: 新加各种插件及文件说明
 "      Author: lcc
 "       Email: leftcold@gmail.com
-"     Version: 0.1
-"  LastChange: 09/12/2011 22:40
+"     Version: 1.0.0(beta)
+"  LastChange: 05/31/2012 23:51
 "     History: 参见$VIMFILES/log/update.log \ez
 " --------------------------------------------------
 
-1、VIM中文文档
+1. VIM中文文档
 	~/.vim/plugin/
 		vimcdoc.vim
 	~/.vim/syntax/
@@ -147,7 +147,7 @@
 		windows.cnx
 		workshop.cnx
 
-2、配色高亮文件
+2. 配色高亮文件
 	~/.vim/colors/
 		blackdust.vim
 		calmbreeze.vim
@@ -156,15 +156,15 @@
 		molokai.vim
 		rainbow_neon.vim
 
-3、ActionScript语法高亮
+3. ActionScript语法高亮
 	~/.vim/syntax/
 		actionscript.vim
 
-4、Css背景高亮
+4. Css背景高亮
 	~/.vim/after/syntax/
 		css.vim
 
-5、NERDTree
+5. NERDTree
 	~/.vim/plugin/
 		NERD_tree.vim
 	~/.vim/nerdtree_plugin/
@@ -173,7 +173,7 @@
 	~/.vim/doc/
 		NERD_tree.txt
 
-6、ZenCoding
+6. ZenCoding
 	~/.vim/plugin/
 		zencoding.vim
 	~/.vim/autoload/
@@ -181,17 +181,17 @@
 	~/.vim/doc/
 		zencoding.txt
 
-7、Gtrans翻译插件
+7. Gtrans翻译插件
 	~/.vim/plugin/
 		gtrans.vim
 
-8、NERDCommenter
+8. NERDCommenter
 	~/.vim/plugin/
 		NERD_commenter.vim
 	~/.vim/doc/
 		NERD_commenter.txt
 
-9、Tabular
+9. Tabular
 	~/.vim/after/plugin/
 		TabularMaps.vim
 	~/.vim/autoload/
@@ -201,19 +201,53 @@
 	~/.vim/plugin/
 		Tabular.txt
 
-10、Taglist
+10. Taglist
 	~/.vim/plugin/
 		taglist.vim
 	~/.vim/doc/
 		taglist.txt
 
-11、csExplorer
+11. csExplorer
 	~/.vim/plugin/
 		csExplorer.vim
 	~/.vim/doc/
 		csExplorer.txt
 
-12、自定义配置文件
+12. php.vim (html enhanced)
+	~/.vim/indent
+		php.vim
+
+13. web-indent
+	~/.vim/indent
+		html.vim
+		javascript.vim
+
+14. coffee-script
+	~/.vim/after/syntax
+		haml.vim
+		html.vim
+	~/.vim/compiler
+		coffee.vim
+	~/.vim/doc
+		coffee-script.txt
+	~/.vim/ftdetect
+		coffee.vim
+		eco.vim
+	~/.vim/ftplugin
+		coffee.vim
+	~/.vim/indent
+		coffee.vim
+	~/.vim/syntax
+		coffee.vim
+		eco.vim
+
+15. autocommand
+	~/.vim/plugin
+		autocommand.vim
+	~/.vim/autocommand
+		autocommand.py
+
+16. 自定义配置文件
 	~/.vim/conf/
 		main.vim
 		set.vim
@@ -222,7 +256,7 @@
 		keyboard.vim
 		command.vim
 
-13、日志文件
+17. 日志文件
 	~/.vim/log/
 		filelist.log
 		update.log
