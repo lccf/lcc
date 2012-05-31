@@ -27,6 +27,8 @@ so <sfile>:p:h/command.vim
 " --------------------------------------------------
 " 自动设置vim高亮as
 au BufNewFile,BufRead *.as set filetype=actionscript
+" 设置haml coffee的缩进
+au BufNewFile,BufRead *.haml,*.sass,*.coffee setl sw=2 ts=2 sts=2 et
 " 自动打开 NERDTreeShowHidden "au VimEnter * NERDTree
 " vim配置文件设置换行为unix "au BufNewFile,BufRead *.vim set ff=unix
 " 编辑文件时，打开NERDTree "au BufNewFile,BufRead * :NERDTree
