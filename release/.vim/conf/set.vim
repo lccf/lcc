@@ -32,8 +32,8 @@ set hls
 " 行高亮 cursorline
 set cul
 " 色彩高亮 colorscheme
-colo desert
-"colo molokai
+"colo desert
+colo molokai
 
 "set ic " 搜索不区分大小写
 "set cursorcolumn " 列高亮，与函数列表有冲突
