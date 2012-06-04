@@ -4,7 +4,7 @@
 "      Author: lcc
 "       Email: leftcold@gmail.com
 "     Version: 1.0.0(beta)
-"  LastChange: 05/31/2012 23:51
+"  LastChange: 06/04/2012 21:11
 "     History: 参见$VIMFILES/log/update.log \ez
 " --------------------------------------------------
 
@@ -247,7 +247,13 @@
 	~/.vim/autocommand
 		autocommand.py
 
-16. 自定义配置文件
+16. matchit
+	~/.vim/plugin
+		matchit.vim
+	~/.vim/doc
+		matchit.txt
+
+17. 自定义配置文件
 	~/.vim/conf/
 		main.vim
 		set.vim
@@ -256,7 +262,7 @@
 		keyboard.vim
 		command.vim
 
-17. 日志文件
+18. 日志文件
 	~/.vim/log/
 		filelist.log
 		update.log
