@@ -59,7 +59,7 @@ endf
 fu! autocommand#bind()
   exe 'no <silent> <buffer> '.s:callKey.' :call autocommand#main()<CR>'
   exe 'vno <silent> <buffer> '.s:callKey.' :call autocommand#main()<CR>'
-  exe 'ino <silent> <buffer> '.s:callKey.' :call autocommand#main()<CR>'
+  exe 'ino <silent> <buffer> '.s:callKey.' <C-o>:call autocommand#main()<CR>'
 endf
 
 " 初始化配置文件
