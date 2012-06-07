@@ -1,5 +1,5 @@
 " --------------------------------------------------
-"    FileName: functions.vim
+"    FileName: function.vim
 "        Desc: 函数配置文件
 "      Author: lcc
 "       Email: leftcold@gmail.com
@@ -100,13 +100,13 @@ ino <S-TAB> <C-R>="\<TAB>"<CR>
 " [空格与制表切换] {{{
 " --------------------------------------------------
 fu! ToggleTab(t)
-    if a:t == 'tab'
-        setl noet
-        ret!
-    elsei a:t == 'space'
-        setl et
-        ret
-    en
+	if a:t == 'tab'
+		setl noet
+		ret!
+	elsei a:t == 'space'
+		setl et
+		ret
+	en
 endf
 com! -nargs=0 ToSpace call ToggleTab('space')
 com! -nargs=0 ToTab call ToggleTab('tab')
@@ -115,17 +115,17 @@ com! -nargs=0 ToTab call ToggleTab('tab')
 " [参考线切换] {{{
 " --------------------------------------------------
 fu! ReferenceLine(t)
-  let ccnum = &cc
-  if ccnum == '' | let ccnum = 0 | en
-  let csw = &sw
-  if a:t == 'add'
-    let ccnum = ccnum + csw
-    exec "setl cc=".ccnum
-  elsei a:t == 'subtract'
-    let ccnum = ccnum - csw
-    if ccnum >= 0 | exec "setl cc=".ccnum | en
-  en
+	let ccnum = &cc
+	if ccnum == '' | let ccnum = 0 | en
+	let csw = &sw
+	if a:t == 'add'
+		let ccnum = ccnum + csw
+		exec "setl cc=".ccnum
+	elsei a:t == 'sub'
+		let ccnum = ccnum - csw
+		if ccnum >= 0 | exec "setl cc=".ccnum | en
+	en
 endf
-nn <silent> <A-u> :call ReferenceLine('subtract')<CR>
+nn <silent> <A-u> :call ReferenceLine('sub')<CR>
 nn <silent> <A-o> :call ReferenceLine('add')<CR>
 " vim:sw=4:ts=4:sts=4:noet:fdm=marker:fdc=1
