@@ -21,6 +21,8 @@ so <sfile>:p:h/function.vim
 so <sfile>:p:h/keyboard.vim
 " 加载自定义命令 访问命令 \ec
 so <sfile>:p:h/command.vim
+" 加载项目配置文件 访问命令 \ep
+ru conf/project.vim
 " 1}}}
 " --------------------------------------------------
 " [autocmd自执行区域] {{{1
@@ -43,17 +45,24 @@ if(has('win32') && match(getcwd(),'system32$')>1) | cd $HOME | en
 " --------------------------------------------------
 " [已加载插件说明] {{{1
 " --------------------------------------------------
-" 1、VE 目录浏览工具
-" 2、NERDTree 树浏览工具
-" 3、ZenCoding 快速编写html、css代码
-" 4、Gtrans 翻译 *需python，进行修改
-" 5、Conque 打开终端 *需python
-" 6、CssColor 高亮css中颜色
-" 7、actionscript 添加actionscript语法高亮支持
-" 8、vimdoc vim中文文档
-" 9、NERDCommenter 自动注释
-" 10、Taglist 文档中标签提示
-" 11、Tabular 用来缩排列表
+"  1. VIM中文文档
+"  2. 自带配色文件
+"  3. actionScript脚本高亮
+"  4. css背景高亮
+"  5. NERDTree 树浏览工具
+"  6. ZenCoding 快速编写html、css代码
+"  7. Gtrans 翻译 *需python，进行修改
+"  8. NERDCommenter 自动注释
+"  9. Tabular 用来缩排列表
+" 10. Taglist 文档中标签提示
+" 11. csExplorer 顔色选择器
+" 12. php.vim php缩进文件
+" 13. web-indent web缩进文件
+" 14. coffee-script coffee高亮等
+" 15. autocommand 自执行命令
+" 16. matchit html标签匹配跳转
+" 17. 自定义配置文件 $VIMFILES/conf
+" 18. 日志文件 $VIMFILES/log/
 " 1}}}
 " --------------------------------------------------
 " [更多信息] {{{1
