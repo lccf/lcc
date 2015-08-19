@@ -44,7 +44,10 @@ ino <A-j> <CR>
 ino <A-n> <Down>
 ino <A-m> <Up>
 ino <A-f> <C-o>$
+vno <A-f> $
 ino <A-b> <C-o>^
+vno <A-b> ^
+ino <A-3> ######<C-o>2<Left>
 ino <A-9> ()<Left>
 ino <A-0> (  )<Left><Left>
 ino <A-'> ""<Left>
@@ -52,6 +55,7 @@ ino <A-[> {}<Left>
 ino <A-]> {<ESC>o}<ESC>O
 ino <A-=> ++<Left>
 ino <F5> <C-R>=strftime('%m/%d/%Y %H:%M')<CR>
+nn <silent><F2> :exec("NERDTree ".expand('%:p:h'))<CR>
 nn <A-r> :noh<CR>
 " 选中后删除
 vno <BS> d

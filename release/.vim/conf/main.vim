@@ -28,9 +28,9 @@ ru conf/project.vim
 " [autocmd自执行区域] {{{1
 " --------------------------------------------------
 " 自动设置vim高亮as
-au BufNewFile,BufRead *.as set filetype=actionscript
+au BufNewFile,BufRead *.as,*.ts set filetype=actionscript
 " 设置haml coffee的缩进
-au BufNewFile,BufRead *.haml,*.sass,*.coffee setl sw=2 ts=2 sts=2 et
+au BufNewFile,BufRead *.haml,*.sass,*.coffee,*.jade setl sw=2 ts=2 sts=2 et
 " 自动打开 NERDTreeShowHidden "au VimEnter * NERDTree
 " vim配置文件设置换行为unix "au BufNewFile,BufRead *.vim set ff=unix
 " 编辑文件时，打开NERDTree "au BufNewFile,BufRead * :NERDTree

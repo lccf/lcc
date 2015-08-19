@@ -55,9 +55,11 @@ set lcs=tab:\|\ ,nbsp:%,trail:-
 " 设定行首tab为灰色
 highlight LeaderTab guifg=#666666
 " 匹配行首tab
-match LeaderTab /\t/
+match LeaderTab /^\t\+/
 " 允许删除退格
 set bs=2
+" 展开空格
+set et
 " }}}
 " --------------------------------------------------
 " [自动完成] {{{
@@ -66,7 +68,7 @@ set cpt+=k "add dictionary complete
 " 加载默认词典文件
 set dict+=$VIMFILES/dict/main.dict
 " 当编辑PHP文件时，会加载PHP词典文件
-au FileType php setl dict+=$VIMFILES/dict/php_funclist.txt
+au FileType php setl dict+=$VIMFILES/dict/ide-funclist.txt
 " }}}
 " --------------------------------------------------
 " [文件编码] {{{
@@ -79,7 +81,8 @@ if has("gui_running") && &enc != 'utf-8'
 	set enc=utf-8
 	" 重新设置菜单语言
 	let $LANG = 'zh_CN.UTF-8'
-	" 加载菜单避免出现乱码
+	" 重新加载菜单避免出现乱码
+	so $VIMRUNTIME/delmenu.vim
 	so $VIMRUNTIME/menu.vim
 en
 " }}}
@@ -109,9 +112,15 @@ if has('gui_running')
 		" 最大化窗体
 		au GUIEnter * simalt ~x
 		" 设置英文字体
-		set gfn=Consolas:h11:cANSI "set guifont=NSimSun:h11:cANSI "set guifont=MonospaceTypewriter:h10:cANSI
+		" set gfn=Microsoft_Yahei:h10:cGB2312
+		set gfn=DejaVu_Sans_Mono_for_Powerline:h10.5:cANSI
+		"set gfn=DejaVu_Sans_Mono_for_Powerline:h40:cANSI
+		" set gfn=Consolas_for_Powerline:h11:cANSI
+		"set gfn=Consolas_for_Powerline:h10:cANSI
+		"set gfn=Consolas:h11:cANSI "set guifont=NSimSun:h11:cANSI "set guifont=MonospaceTypewriter:h10:cANSI
 		" 设置中文字体
-		set gfw=NSimSun:h11:cGB2312 "set gfw=youyuan:h10.5:cGB2312 set guifontwide=Yahei_Mono:h11:cGB2312
+		" set gfw=Microsoft_Yahei:h10:cGB2312 "set gfw=NSimSun:h10:cGB2312
+		set gfw=youyuan:h10:cGB2312 "set guifontwide=Yahei_Mono:h11:cGB2312
 	"elsei has('unix')
 		"set guifont=Monospace\ 10 "set guifont=Monospace\ Italic \9
 	en
