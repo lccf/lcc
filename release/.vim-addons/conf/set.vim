@@ -32,8 +32,11 @@ set hls
 " 行高亮 cursorline
 set cul
 " 色彩高亮 colorscheme
-"colo desert
-colo molokai
+" colo desert
+colo lucius
+set bg=light
+" colo molokai
+" colo calmbreeze_gary
 
 "set ic " 搜索不区分大小写
 "set cursorcolumn " 列高亮，与函数列表有冲突
@@ -43,11 +46,11 @@ colo molokai
 " [缩进、删除] {{{
 " --------------------------------------------------
 " 缩进宽
-set sw=4
+set sw=2
 " 设置制表符宽度
-set ts=4
+set ts=2
 " 设置软缩进
-set sts=4
+set sts=2
 " 显示tab和空格
 set list
 " 设置tab和空格样式
@@ -68,7 +71,8 @@ set cpt+=k "add dictionary complete
 " 加载默认词典文件
 set dict+=$VIMFILES/dict/main.dict
 " 当编辑PHP文件时，会加载PHP词典文件
-au FileType php setl dict+=$VIMFILES/dict/ide-funclist.txt
+au FileType php setl dict+=$VIMFILES/dict/ide-funclist.dict
+au FileType vue setl dict+=$VIMFILES/dict/vue.dict
 " }}}
 " --------------------------------------------------
 " [文件编码] {{{
@@ -123,6 +127,9 @@ if has('gui_running')
 		set gfw=youyuan:h10:cGB2312 "set guifontwide=Yahei_Mono:h11:cGB2312
 	"elsei has('unix')
 		"set guifont=Monospace\ 10 "set guifont=Monospace\ Italic \9
+	elsei has('mac')
+		set macmeta
+		set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
 	en
 en
 " vim:sw=4:ts=4:sts=4:noet:fdm=marker:fdc=1

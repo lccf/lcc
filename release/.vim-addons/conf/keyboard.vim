@@ -45,18 +45,21 @@ ino <A-n> <Down>
 ino <A-m> <Up>
 ino <A-f> <C-o>$
 vno <A-f> $
-ino <A-b> <C-o>^
+vno <Tab> >
+vno <S-Tab> <
+no <A-b> <C-o>^
 vno <A-b> ^
 ino <A-3> ######<C-o>2<Left>
 ino <A-9> ()<Left>
 ino <A-0> (  )<Left><Left>
 ino <A-'> ""<Left>
 ino <A-[> {}<Left>
-ino <A-]> {<ESC>o}<ESC>O
+ino <A-]> {}<Left><CR><Esc>O
 ino <A-=> ++<Left>
 ino <F5> <C-R>=strftime('%m/%d/%Y %H:%M')<CR>
 nn <silent><F2> :exec("NERDTree ".expand('%:p:h'))<CR>
 nn <A-r> :noh<CR>
+nn <A-b> :CtrlPBuffer<CR>
 " 选中后删除
 vno <BS> d
 " 复制
@@ -76,6 +79,7 @@ exe 'vnoremap <script> <A-p>' paste#paste_cmd['v']
 "onoremap <C-A> <C-C>gggH<C-O>G
 "snoremap <C-A> <C-C>gggH<C-O>G
 "xnoremap <C-A> <C-C>ggVG
+ino <F1> <Esc>
 " }}}
 " --------------------------------------------------
 " [宏执行热键] {{{
@@ -111,6 +115,8 @@ nn <leader>ed :tabnew $VIMFILES/conf/plugin.vim<CR>
 nn <leader>ef :tabnew $VIMFILES/conf/function.vim<CR>
 nn <leader>eg :tabnew $VIMFILES/conf/keyboard.vim<CR>
 nn <leader>ec :tabnew $VIMFILES/conf/command.vim<CR>
+nn <leader>ev :tabnew $VIMFILES/conf/vam.vim<CR>
 nn <leader>ep :tabnew $VIMFILES/conf/project.vim<CR>
 nn <leader>ez :tabnew $VIMFILES/log/update.log<CR>
 " vim:sw=4:ts=4:sts=4:noet:fdm=marker:fdc=1
+ino <A-b> <C-o>^

@@ -7,7 +7,10 @@
 " LastChange: 05/27/2012 21:46
 "    History: 参见$VIMFILES/log/update.log \ez
 " --------------------------------------------------
-
+" let g:PHP_default_indenting = 1
+" let g:PHP_BracesAtCodeLevel = 1
+" let g:PHP_outdentphpescape = 0
+let g:PHP_vintage_case_default_indent = 1
 " --------------------------------------------------
 " [分配置文件加载] {{{1
 " --------------------------------------------------
@@ -31,6 +34,9 @@ ru conf/project.vim
 au BufNewFile,BufRead *.as,*.ts set filetype=actionscript
 " 设置haml coffee的缩进
 au BufNewFile,BufRead *.haml,*.sass,*.coffee,*.jade setl sw=2 ts=2 sts=2 et
+au BufNewFile,BufRead *.sass,*.scss,*.css setl isk+=-
+" 自动设置vim高亮vue
+au BufNewFile,BufRead *.vue set filetype=html
 " 自动打开 NERDTreeShowHidden "au VimEnter * NERDTree
 " vim配置文件设置换行为unix "au BufNewFile,BufRead *.vim set ff=unix
 " 编辑文件时，打开NERDTree "au BufNewFile,BufRead * :NERDTree
@@ -41,6 +47,69 @@ au BufNewFile,BufRead *.haml,*.sass,*.coffee,*.jade setl sw=2 ts=2 sts=2 et
 " 修复从windows7任务栏启动时，当前目录为system32。因为system32目录文件过多，在
 " 此目录开启NERDTree时较卡
 if(has('win32') && match(getcwd(),'system32$')>1) | cd $HOME | en
+" set completeopt=longest,menuone
+" let g:neocomplcache_enable_at_startup = 1
+" let g:loaded_neocomplcache = 1
+if(has('win32') && match($PATH,'SlikSvn')<0)
+  let $PATH=$PATH.';'.$VIMFILES.'/bin;C:\Program Files\SlikSvn\bin;C:\Program Files\Mercurial;D:\Program Files\PortableGit-1.9.0\bin'
+en
+
+" let g:session_file=$VIMFILES.'/conf/session.vim'
+"
+" fu! LoadSessionFile()
+"     if filereadable(g:session_file)
+"         exec 'so '.g:session_file
+"     en
+" endf
+"
+" au VimEnter * cal LoadSessionFile()
+" au VimLeave * exec 'mkvie! '.g:session_file
+
+" {{{ Win平台下窗口全屏组件 gvimfullscreen.dll
+" Alt + Enter 全屏切换
+" Shift + t 降低窗口透明度
+" Shift + y 加大窗口透明度
+" Shift + r 切换Vim是否总在最前面显示
+" Vim启动的时候自动使用当前颜色的背景色以去除Vim的白色边框
+if has('gui_running') && has('gui_win32') && has('libcall')
+    let g:MyVimLib = 'gvimfullscreen.dll'
+    function! ToggleFullScreen()
+        call libcall(g:MyVimLib, 'ToggleFullScreen', 1)
+    endfunction
+
+    let g:VimAlpha = 245
+    function! SetAlpha(alpha)
+        let g:VimAlpha = g:VimAlpha + a:alpha
+        if g:VimAlpha < 180
+            let g:VimAlpha = 180
+        endif
+        if g:VimAlpha > 255
+            let g:VimAlpha = 255
+        endif
+        call libcall(g:MyVimLib, 'SetAlpha', g:VimAlpha)
+    endfunction
+
+    let g:VimTopMost = 0
+    function! SwitchVimTopMostMode()
+        if g:VimTopMost == 0
+            let g:VimTopMost = 1
+        else
+            let g:VimTopMost = 0
+        endif
+        call libcall(g:MyVimLib, 'EnableTopMost', g:VimTopMost)
+    endfunction
+    "映射 Alt+Enter 切换全屏vim
+    map <A-enter> <esc>:call ToggleFullScreen()<cr>
+    "切换Vim是否在最前面显示
+    nmap <s-r> <esc>:call SwitchVimTopMostMode()<cr>
+    "增加Vim窗体的不透明度
+    nmap <s-t> <esc>:call SetAlpha(10)<cr>
+    "增加Vim窗体的透明度
+    nmap <s-y> <esc>:call SetAlpha(-10)<cr>
+    " 默认设置透明
+    autocmd GUIEnter * call libcallnr(g:MyVimLib, 'SetAlpha', g:VimAlpha)
+endif
+" }}}
 " 1}}}
 " --------------------------------------------------
 " [已加载插件说明] {{{1
