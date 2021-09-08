@@ -1,5 +1,5 @@
 .*
 *.swp
-!.vim
-!.vimrc
+!.vim*
 !.gitignore
+!.gitkeep
