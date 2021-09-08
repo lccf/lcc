@@ -49,6 +49,7 @@ vno <Tab> >
 vno <S-Tab> <
 no <A-b> <C-o>^
 vno <A-b> ^
+ino <A-b> <C-o>^
 ino <A-3> ######<C-o>2<Left>
 ino <A-9> ()<Left>
 ino <A-0> (  )<Left><Left>
@@ -115,8 +116,8 @@ nn <leader>ed :tabnew $VIMFILES/conf/plugin.vim<CR>
 nn <leader>ef :tabnew $VIMFILES/conf/function.vim<CR>
 nn <leader>eg :tabnew $VIMFILES/conf/keyboard.vim<CR>
 nn <leader>ec :tabnew $VIMFILES/conf/command.vim<CR>
-nn <leader>ev :tabnew $VIMFILES/conf/vam.vim<CR>
+"nn <leader>ev :tabnew $VIMFILES/conf/vam.vim<CR>
+nn <leader>el :tabnew $VIMFILES/conf/plug.vim<CR>
 nn <leader>ep :tabnew $VIMFILES/conf/project.vim<CR>
 nn <leader>ez :tabnew $VIMFILES/log/update.log<CR>
 " vim:sw=4:ts=4:sts=4:noet:fdm=marker:fdc=1
-ino <A-b> <C-o>^

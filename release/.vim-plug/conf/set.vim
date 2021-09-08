@@ -33,10 +33,16 @@ set hls
 set cul
 " 色彩高亮 colorscheme
 " colo desert
-colo lucius
-set bg=light
+colo desert
+set bg=dark
 " colo molokai
 " colo calmbreeze_gary
+" 命令行调试
+se ch=1
+" 错误提示列
+se scl=yes
+" 更新时间
+set ut=300
 
 "set ic " 搜索不区分大小写
 "set cursorcolumn " 列高亮，与函数列表有冲突

@@ -23,20 +23,20 @@ so <sfile>:p:h/function.vim
 " 加载按热键配置 访问命令 \eg
 so <sfile>:p:h/keyboard.vim
 " 加载自定义命令 访问命令 \ec
-so <sfile>:p:h/command.vim
+"so <sfile>:p:h/command.vim
 " 加载项目配置文件 访问命令 \ep
-ru conf/project.vim
+"ru conf/project.vim
 " 1}}}
 " --------------------------------------------------
 " [autocmd自执行区域] {{{1
 " --------------------------------------------------
 " 自动设置vim高亮as
-au BufNewFile,BufRead *.as,*.ts set filetype=actionscript
+" au BufNewFile,BufRead *.as,*.ts set filetype=actionscript
 " 设置haml coffee的缩进
 au BufNewFile,BufRead *.haml,*.sass,*.coffee,*.jade setl sw=2 ts=2 sts=2 et
 au BufNewFile,BufRead *.sass,*.scss,*.css setl isk+=-
 " 自动设置vim高亮vue
-au BufNewFile,BufRead *.vue set filetype=html
+"au BufNewFile,BufRead *.vue set filetype=html
 " 自动打开 NERDTreeShowHidden "au VimEnter * NERDTree
 " vim配置文件设置换行为unix "au BufNewFile,BufRead *.vim set ff=unix
 " 编辑文件时，打开NERDTree "au BufNewFile,BufRead * :NERDTree

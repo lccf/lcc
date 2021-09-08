@@ -145,4 +145,11 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules|vendor|dist)$'
 " let g:ctrlp_clear_cache_on_exit = 1
 let g:ctrlp_use_caching = 0
 let g:ctrlp_working_path_mode = 'ra'
+" }}}
+" --------------------------------------------------
+" [Coc.nvim] {{{
+" --------------------------------------------------
+" nmap <leader>cd  <Plug>(coc-declaration)
+nmap <leader>ci  <Plug>(coc-implementation)
+" }}}
 " vim:sw=4:ts=4:sts=4:noet:fdm=marker:fdc=1

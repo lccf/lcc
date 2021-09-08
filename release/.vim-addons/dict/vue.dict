@@ -1,4 +1,0 @@
-# life cycle
-beforeCreate created beforeMount mounted beforeUpdate updated beforeDestroy destroyed
-# options
-components mixins methods
